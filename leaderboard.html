@@ -23,16 +23,24 @@ body {font-family: "Lato", sans-serif}
   </div>
 
 
-
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-    <!-- Home Section -->
-    <div class="w3-container w3-padding-32" id="home">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Home</h3>
-        <p>Welcome to Helpcopter, stay a while :)</p>
+    <!-- Leaderboard Section -->
+    <div class="w3-container w3-padding-32" id="leaderboard">
+
     </div> 
 
+    <ol class ="w3-content w3-padding">
+
+    {% for item in data %}
+        
+
+            <li>{{item[0]}} {{item[1]}}</li >
+
+
+    {% endfor %}
+    </ol>
     
   <!-- Image of location/map -->
   <div class="w3-container">
